@@ -11,11 +11,13 @@ Nosotros creamos la Base de Datos en un Azure Postgres 16 Flex Server utilizando
 
 Este es nuestro diseño del mismo.
 
-![alt text](png/DB.png)
+![image](png/DB.png)
 
 ### Generación de Datos
 
 Nosotros utilizamos las librerias que se encuentran en requirements.txt.
+
+Para el uso de esta sección de la entrega, deberán pedir a cualquiera de los integrantes el secrets.json con los datos y ponerlo en la misma carpeta que el main.py.
 
 Destacamos el uso de encrypción para las contraseñás de los usuarios. Las funciones son las siguientes:
 
@@ -27,4 +29,8 @@ Destacamos el uso de encrypción para las contraseñás de los usuarios. Las fun
 
 Nosotros decidimos en utilizar PowerBI por su facil integración con nuestra base de datos.
 
-...
+[Link al PowerBI](EntregableBI.pbix). Les recuerdo refrescar la hoja para ver los resultados nuevos e ingresar los mismos datos que en secrets.json
+
+### Autores
+
+Joaquin Ramos, Franco Moggia e Ignacio Alfasso

@@ -57,7 +57,7 @@ def insert_service():
 from datetime import datetime, timedelta
 
 def random_to_transactions(quantity):
-    cursor.execute("SELECT COUNT(*) FROM user")
+    cursor.execute("SELECT COUNT(*) FROM users")
     num_users = cursor.fetchone()[0]
 
     cursor.execute("SELECT COUNT(*) FROM service_master")
@@ -76,11 +76,11 @@ def random_to_transactions(quantity):
         values = (user_id, service_id, quantity, timestamp_str)
         cursor.execute(sql, values)
         conn.commit()
-        print(f"Servicio insertado correctamente: {service_id}")
+        print(f"Transacción generada correctamente. Usuario, servicio:{user_id}, {service_id}")
 
-insert_service_manually()
+insert_service()
 random_to_users(5)
-generate_random_transactions(5)
+random_to_transactions(5)
 
 cursor.close()
 conn.close()

@@ -79,8 +79,8 @@ def random_to_transactions(quantity):
         print(f"Transacción generada correctamente. Usuario, servicio:{user_id}, {service_id}")
 
 insert_service()
-random_to_users(5)
-random_to_transactions(5)
+random_to_users(6)
+random_to_transactions(6)
 
 cursor.close()
 conn.close()

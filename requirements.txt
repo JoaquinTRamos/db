@@ -1,3 +1,5 @@
 - Faker
 - base64
 - random
+- json
+- psycopg2
